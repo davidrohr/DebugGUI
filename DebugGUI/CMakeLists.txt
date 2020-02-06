@@ -135,3 +135,18 @@ install(
   DESTINATION
   ${CMAKE_INSTALL_LIBDIR}/cmake/DebugGUI
 )
+
+install(
+  FILES
+  "${CMAKE_CURRENT_SOURCE_DIR}/src/HandMadeMath.h"
+  DESTINATION
+  ${CMAKE_INSTALL_PREFIX}/include
+)
+
+install(
+  DIRECTORY
+  "${CMAKE_CURRENT_SOURCE_DIR}/include/GL"
+  "${CMAKE_CURRENT_SOURCE_DIR}/include/KHR"
+  DESTINATION
+  ${CMAKE_INSTALL_PREFIX}/include
+)
